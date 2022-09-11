@@ -2,10 +2,9 @@
 
 /**
  * nop -  does nothing
- * @stack: doesnt matter
+ * @stack: double pointer
  * @n: int
- *
- * Return: NOTHING
+ * Return: Nothing
  */
 void nop(stack_t **stack, unsigned n)
 {

@@ -1,11 +1,10 @@
 #include "monty.h"
 
 /**
- * swap -  swaps data from top to previous
- * @stack: stack given by main
+ * swap -  swaps top two elements of the stack
+ * @stack: double pointer
  * @line_cnt: amount of lines
- *
- * Return: void
+ * Return: Nothing
  */
 void swap(stack_t **stack, unsigned int line_cnt)
 {

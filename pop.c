@@ -1,11 +1,10 @@
 #include "monty.h"
 
 /**
-* pop - pops the very top element of the stack
-* @stack: stack given by main in start.c
-* @line_cnt: line number for error messages
-*
-* Return: void
+* pop - removes the very top element of the stack
+* @stack: double pointer
+* @line_cnt: line number
+* Return: Nothing
 */
 void pop(stack_t **stack, unsigned int line_cnt)
 {
@@ -21,6 +20,6 @@ void pop(stack_t **stack, unsigned int line_cnt)
 	free(*stack);
 	*stack = tmp;
 	if (!*stack)
-		return; /* prevents errors cause next line might assign a NULL */
+		return;
 	(*stack)->prev = NULL;
 }

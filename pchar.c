@@ -1,11 +1,10 @@
 #include "monty.h"
 
 /**
- * pchar - prints the int at the top of the stack as char
- * @stack: stack given by main
- * @line_cnt: amount of lines
- *
- * Return: void
+ * pchar - prints a char
+ * @stack: double pointer
+ * @line_cnt: line numbers
+ * Return: Nothing
  */
 void pchar(stack_t **stack, unsigned int line_cnt)
 {

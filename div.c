@@ -2,10 +2,10 @@
 
 /**
  * _div - divides the next top value by the top value
- * @stack: stack given by main
- * @line_cnt: line counter
+ * @stack: double pointer
+ * @line_cnt: line number
  *
- * Return: void
+ * Return: Nothing
  */
 void _div(stack_t **stack, unsigned int line_cnt)
 {
@@ -25,7 +25,6 @@ void _div(stack_t **stack, unsigned int line_cnt)
 	}
 
 	result = ((*stack)->next->n) / ((*stack)->n);
-	pop(stack, line_cnt);/*For top node*/
+	pop(stack, line_cnt);
 	(*stack)->n = result;
 }
-

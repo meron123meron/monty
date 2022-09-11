@@ -2,10 +2,9 @@
 
 /**
  * pint - print the value at the top of the stack
- * @stack: stack given by main in start.c
- * @line_cnt: amount of lines
- *
- * Return: void
+ * @stack: double pointer
+ * @line_cnt: line number
+ * Return: Nothing
  */
 void pint(stack_t **stack, unsigned int line_cnt)
 {

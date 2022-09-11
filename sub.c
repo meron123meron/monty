@@ -2,10 +2,9 @@
 
 /**
  * _sub -  substracts the first two nodes of the stack
- * @stack: stack given by main
- * @line_cnt: line counter
- *
- * Return: void
+ * @stack: double pointer
+ * @line_cnt: line numbers
+ * Return: Nothing
  */
 void _sub(stack_t **stack, unsigned int line_cnt)
 {

@@ -2,11 +2,10 @@
 
 /**
  * opcode - function in charge of running builtins
- * @stack: stack given by main
- * @str: string to compare
- * @line_cnt: amount of lines
- *
- * Return: nothing
+ * @stack: double pointer
+ * @str: string
+ * @line_cnt: line numbers
+ * Return: Nothing
  */
 void opcode(stack_t **stack, char *str, unsigned int line_cnt)
 {
@@ -30,7 +29,7 @@ void opcode(stack_t **stack, char *str, unsigned int line_cnt)
 		if (strcmp(op[i].opcode, str) == 0)
 		{
 			op[i].f(stack, line_cnt);
-			return; /* if we found a match, run the function */
+			return;
 		}
 		i++;
 	}

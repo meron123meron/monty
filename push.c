@@ -1,11 +1,10 @@
 #include "monty.h"
 
 /**
- * push - push element into the stack
- * @stack: stack given by main
- * @line_cnt: amount of lines
- *
- * Return: void
+ * push - pushes an element into the stack
+ * @stack: double pointer
+ * @line_cnt: line numbers
+ * Return: Nothing
  */
 void push(stack_t **stack, unsigned int line_cnt)
 {

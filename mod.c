@@ -2,10 +2,9 @@
 
 /**
  * mod - computes the remainder of the division
- * @stack: stack given by main
+ * @stack: double pointer
  * @line_cnt: line counter
- *
- * Return: void
+ * Return: Nothing
  */
 void mod(stack_t **stack, unsigned int line_cnt)
 {
@@ -25,7 +24,6 @@ void mod(stack_t **stack, unsigned int line_cnt)
 	}
 
 	result = ((*stack)->next->n) % ((*stack)->n);
-	pop(stack, line_cnt);/*For top node*/
+	pop(stack, line_cnt);
 	(*stack)->n = result;
 }
-

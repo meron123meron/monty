@@ -1,11 +1,10 @@
 #include "monty.h"
 
 /**
- * pstr - prints the contents of a stack_t stack as a string
- * @stack: stack given by main
- * @line_cnt: line counter for error messages
- *
- * Return: nothing
+ * pstr - prints a string
+ * @stack: double pointer
+ * @line_cnt: line number
+ * Return: Nothing
  */
 void pstr(stack_t **stack, unsigned int line_cnt __attribute__((unused)))
 {
@@ -20,4 +19,3 @@ void pstr(stack_t **stack, unsigned int line_cnt __attribute__((unused)))
 	}
 	putchar('\n');
 }
-

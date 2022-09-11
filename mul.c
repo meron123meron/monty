@@ -1,11 +1,10 @@
 #include "monty.h"
 
 /**
- * _mul - divides the next top value by the top value
- * @stack: stack given by main
- * @line_cnt: line counter
- *
- * Return: void
+ * _mul - multiplies
+ * @stack: double pointer
+ * @line_cnt: line number
+ * Return: Nothing
  */
 void _mul(stack_t **stack, unsigned int line_cnt)
 {
@@ -19,8 +18,6 @@ void _mul(stack_t **stack, unsigned int line_cnt)
 	}
 
 	result = ((*stack)->next->n) * ((*stack)->n);
-	pop(stack, line_cnt);/*For top node*/
+	pop(stack, line_cnt);
 	(*stack)->n = result;
 }
-
-
