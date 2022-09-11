@@ -36,3 +36,36 @@ void opcode(stack_t **stack, char *str, unsigned int line_cnt)
 	fprintf(stderr, "L%d: unknown instruction %s\n", line_cnt, str);
 	exit(EXIT_FAILURE);
 }
+/**
+ * file_error - prints error message
+ *
+ * @argv: the arguments
+ *
+ * Return: Nothing
+ *
+ */
+
+void file_error(char *argv)
+{
+
+	fprintf(stderr, "Error: Can't open file %s\n", argv);
+
+	exit(EXIT_FAILURE);
+
+}
+
+/**
+ * error_usage - prints usage message
+ *
+ * Return: Nothing
+ *
+ */
+
+void error_usage(void)
+{
+
+	fprintf(stderr, "USAGE: monty file\n");
+
+	exit(EXIT_FAILURE);
+
+}
